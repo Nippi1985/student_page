@@ -34,6 +34,23 @@ p {
     line-height: 24px;
 }
 
+link {
+    color: aquamarine;
+}
+
+a {
+    color: #363232;
+    font-family: "Comfortaa", sans-serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #247380 ;
+}
+
+a:focus, a:hover {
+    color: #37A2B3;
+}
 
 img {
     display: block;
@@ -206,6 +223,40 @@ dd {
     min-height: 350px;
 }
 
+.experience__table {
+    min-width: 500px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 auto;
+}
+
+.courses__table {
+    min-width: 500px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 30px auto 0 auto;
+}
+
+.courses__table__cell, .table__cell {
+    width: 33%;
+}
+
+.courses__table__row {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.table__line {
+    height: 2px;
+    background-color: black;
+    width: 55%;
+    min-width: 400px;
+    margin: 0 auto;
+
+}
+
 @media (min-width: 1170px) {
     .experience::before {
         position: absolute;
@@ -239,11 +290,38 @@ dd {
     flex-shrink: 0;
     margin-bottom: 0;
     margin-top: 0;
+    padding-bottom: 20px;
 }
 
 .social__list {
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    min-height: min-content;
+}
+
+.social__item {
+    width: min-content;
+    height: min-content;
+    display: block;
+}
+.telegram, .mail, .github {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+a svg {
+    width: 50px;
+    height: 50px;
+}
+
+.telegram:hover path {
+    fill: red;
+}
+
+.mail:hover .mail__inner, .github:hover .github__inner {
+    fill: red;
 }
 
 .visually-hidden {
