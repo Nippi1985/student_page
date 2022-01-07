@@ -109,9 +109,10 @@ ul, ol {
 }
 
 .user__photo {
-    min-width: 250px;
-    height: auto;
+    min-width: 400px;
+    min-height: 400px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 50%;
 }
 
 dt {
